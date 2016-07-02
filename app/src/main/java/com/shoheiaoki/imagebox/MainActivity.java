@@ -1,16 +1,17 @@
 package com.shoheiaoki.imagebox;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String MAIN_TO_IMAGE_PROCESS = "MainActivity_ImageProcessActivity";
 
     ListView algoListView;
 
@@ -35,7 +36,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String val = (String)adapterView.getItemAtPosition(i);
-                Toast.makeText(MainActivity.this,val,Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this,val,Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this,ImageProcessActivity.class);
+                intent.putExtra(MAIN_TO_IMAGE_PROCESS,val);
+                startActivity(intent);
             }
         });
     }
