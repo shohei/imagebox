@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             algoNames.add(algoName);
         }
 
-        ArrayAdapter<String> algoAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,algoNames);
+        ArrayAdapter<String> algoAdapter = new ArrayAdapter<String>(this,R.layout.rowdata,algoNames);
         algoListView.setAdapter(algoAdapter);
 
         algoListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
