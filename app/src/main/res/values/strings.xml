@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">ImageBox</string>
+
+    <string-array name="image_processing_algorithms">
+        <item>binarization</item>
+        <item>p_tile</item>
+        <item>discriminant_analysis</item>
+        <item>moving_average</item>
+        <item>gaussian</item>
+        <item>median</item>
+        <item>sobel</item>
+        <item>prewitt</item>
+        <item>sharpening</item>
+        <item>bilateral</item>
+        <item>inflation</item>
+        <item>thinning</item>
+        <item>labeling</item>
+        <item>contour_tracking</item>
+        <item>circularity</item>
+        <item>interpolation</item>
+        <item>affine</item>
+        <item>rotation</item>
+        <item>marginal</item>
+        <item>gamma_correction</item>
+        <item>formula</item>
+        <item>computation</item>
+        <item>pseudo_color</item>
+        <item>template_matching</item>
+        <item>sidba</item>
+        <item>fast_filter</item>
+        <item>fast_filter2</item>
+    </string-array>
+
+    <string name="binarization">二値化</string>
+    <string name="p_tile">Pタイル法</string>
+    <string name="discriminant_analysis">判別分析法（大津の二値化）</string>
+    <string name="moving_average">平滑化（移動平均）フィルタ</string>
+    <string name="gaussian">ガウシアンフィルタ</string>
+    <string name="median">メディアンフィルタ</string>
+    <string name="sobel">エッジ抽出(Sobelフィルタ)</string>
+    <string name="prewitt">エッジ抽出(Prewittフィルタ)</string>
+    <string name="sharpening">アンシャープマスキング（鮮鋭化フィルタ）</string>
+    <string name="bilateral">バイラテラルフィルタ</string>
+    <string name="inflation">膨張・収縮・オープニング・クロージング</string>
+    <string name="thinning">細線化</string>
+    <string name="labeling">ラベリング</string>
+    <string name="contour_tracking">輪郭追跡処理アルゴリズム</string>
+    <string name="circularity">円形度</string>
+    <string name="interpolation">画素の補間(Nearest neighbor,Bilinear,Bicubic)</string>
+    <string name="affine">アフィン変換</string>
+    <string name="rotation">画像の回転</string>
+    <string name="marginal">外周画像の処理</string>
+    <string name="gamma_correction">ガンマ補正（ルックアップテーブルの例）</string>
+    <string name="formula">色相、彩度、明度の公式</string>
+    <string name="computation">色相、彩度、明度の計算方法</string>
+    <string name="pseudo_color">疑似カラー(Pseudo-color)</string>
+    <string name="template_matching">テンプレートマッチング</string>
+    <string name="sidba">標準画像データベースSIDBA(Standard Image Data-BAse)</string>
+    <string name="fast_filter">フィルタ処理の高速化アルゴリズム（重複した計算を行わない）</string>
+    <string name="fast_filter2">フィルタ処理の高速化アルゴリズム(縦横に処理を分ける)</string>
+
+
+</resources>
